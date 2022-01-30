@@ -31,7 +31,7 @@ $(document).ready(function(){
     $(".head123").width($(".inpt").width())
     $(".add").css({position: 'fixed'})
 
-    $(".section2,.navbar").css({marginRight: $(".aside").width()})
+    $(".section2,.navbar,.section4").css({marginRight: $(".aside").width()})
     
     }
     
