@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reports</title>
+    <title>addclient</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -40,10 +40,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/addclient.css">
   </head>
   <body>
-    <div
+<div
       class="flex h-screen bg-gray-50 dark:bg-gray-900"
       :class="{ 'overflow-hidden': isSideMenuOpen }"
     >
@@ -53,8 +54,8 @@
         <div class="py-4 text-gray-500 dark:text-gray-400 repor">
 
 
-        <div class="electronic">
-          <p>المحاسب الالكتروني</p>
+        <div class="electronic" id="electronic1">
+          <p>Cashpos</p>
 
         </div>
 
@@ -65,7 +66,7 @@
               
               <a
                 class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                href="Reports.html"
+                href="index.html"
               >
                <img src="img/home-page.png">
                 <span class="ml-4">الصفحة الرئيسية</span>
@@ -105,9 +106,9 @@
             </li>
             <li class="relative px-6 py-3">
               <a
-              class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-              href="buy-invoice.html"
-            >
+            class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+            href="buy-invoice.html"
+          >
               <img src="img/purchase.png">
 
                 <span class="ml-4">المشتريات</span>
@@ -166,6 +167,7 @@
                 <span class="ml-4">الصيانه</span>
               </a>
             </li>
+                
 
             <li class="relative px-6 py-3">
               <a
@@ -177,7 +179,6 @@
                 <span class="ml-4">المخزن</span>
               </a>
             </li>
-
            
             <li class="relative px-6 py-3">
               <a
@@ -220,7 +221,7 @@
       >
         <div class="py-4 text-gray-500 dark:text-gray-400 repor">
           <div class="electronic">
-            <p>المحاسب الالكتروني</p>
+            <p>Cashpos</p>
   
           </div>
   
@@ -232,7 +233,7 @@
               
               <a
                 class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                href="Reports.html"
+                href="index.html"
               >
                <img src="img/home-page.png">
                 <span class="ml-4">الصفحة الرئيسية</span>
@@ -272,9 +273,9 @@
             </li>
             <li class="relative px-6 py-3">
               <a
-              class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-              href="buy-invoice.html"
-            >
+            class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+            href="buy-invoice.html"
+          >
               <img src="img/purchase.png">
 
                 <span class="ml-4">المشتريات</span>
@@ -333,8 +334,7 @@
                 <span class="ml-4">الصيانه</span>
               </a>
             </li>
-
-
+              
             <li class="relative px-6 py-3">
               <a
                 class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
@@ -345,7 +345,6 @@
                 <span class="ml-4">المخزن</span>
               </a>
             </li>
-
            
             <li class="relative px-6 py-3">
               <a
@@ -374,6 +373,7 @@
               @click="toggleSideMenu"
               aria-label="Menu"
             >
+            
             <i class="fa fa-align-right" style="color: #666;font-size: 20px"></i>
 
             </button>
@@ -385,7 +385,9 @@
                 <div class="absolute inset-y-0 flex items-center pl-2">
                 
                 </div>
+                <i class="icon1 fa fa-times" style="color: #666;font-size: 20px;display: none;"></i>
                 <i class="icon2 fa fa-align-right" style="color: #666;font-size: 20px"></i>
+
                 
               </div>
             </div>
@@ -491,166 +493,225 @@
 
                <!-- Notifications menu -->
                <li class="relative" style="padding: 0px 5px;"> 
-                <span style="color: #666;">محمد السيد</span>
+                <span style="color: #666;">علاء محمد رجب</span>
                 </li>
             </ul>
           </div>
         </header>
 
+<!--This Is Section2-->
+<div class="section2">
+<div class="head-addclient">
+<div class="container">
+<div class="row">
 
-     <div class="section4">
-       <div class="container">
-        <div class="row">
+<div class="col-lg-4 col-12 add">
+<h5  class="head123">بيانات العميل</h5>
+<form action="">
+<input type="number" placeholder="1" readonly style="background-color: rgba(235, 235, 235, 0.377);">
+<input class="inpt" type="text" placeholder="اسم العميل">
+<input type="number" placeholder="رقم الهاتف">
+<input type="text" placeholder="عنوان العميل">
+<input type="text" placeholder="مبلغ عليه">
+<input type="text" placeholder="حد اقصي للمديونيه">
+<input type="number" placeholder="رقم ضريبي">
+<input type="text" placeholder="ملاحظات">
+<input type="submit" value="حفظ البيانات">
+<input type="button" name="" id="" value="حذف">
 
-          <div class="reports1 col-md-3 col-12">
-            <div class="reports11">
+</form>               
 
-            <div class="para">
-
-              <span>اجمالي الربح</span><br>
-              <br>
-              <span>2000</span>
-
-
-            </div>
-           
-
-            <div class="icon">
-
-              <i class="fa fa-money-check-alt"></i>
-
-
-            </div>
-
-            
-          </div>
-          </div>
-
-          <div class="reports2 col-md-3 col-12">
-            <div class="reports22">
-
-            
-            <div class="para">
-
-              <span>اجمالي المصاريف</span><br><br>
-              <span>500</span>
-
-
-            </div>
-           
-
-            <div class="icon">
-
-              <i class="fa fa-shopping-cart"></i>
-
-
-            </div>
-          </div>
-          </div>
-
-          <div class="reports3 col-md-3 col-12">
-            <div class="reports33">
-
-
-          
-            <div class="para">
-
-              <span>اجمالي المبيعات</span><br><br>
-              <span>7000</span>
-
-
-            </div>
-           
-
-            <div class="icon">
-
-              <i class="fa fa-chart-bar"></i>
-
-
-            </div>
-           
-
-          </div>
-          </div>
-
-
-
-
-          <div class="reports4 col-md-3 col-12">
-            <div class="reports44">
-
-            
-            <div class="para">
-
-              <span>اجمالي المشتريات</span><br><br>
-              <span>4000</span>
-
-
-            </div>
-           
-
-            <div class="icon">
-
-              <i class="fa fa-store"></i>
-
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-<div class="reports5 col-md-12">
-  <div class="reports55">
-    <canvas id="myChart" style="width: 516px; display: block; height: 190px; font-size: 30px;" width="516" height="190"></canvas>
-
-
-  </div>
 </div>
 
+    
+<div class="col-lg-8 col-12 add1">
 
+<div class="bt">
 
-        
-
-        </div>
-     </div>     
+<form action="">
+   <input type="button" value="تقرير pdf">
+   <input type="button" value="دفع مبلغ">
+    <input type="button" value="كشف حساب عميل">
+    
+    <label for="" style="border: 1px solid #aaa;">
+    <input type="search" class="search-field" placeholder="اسم العميل / رقم الهاتف" value="" name="s" style="border: none;width: 80%;">
+    <button><i class="fa fa-search" style="text-align: left;color: #3c5e85;"></i></button>
+  </label>
+</form>
 </div>
 
+<table>
+<tr>
+<th class="series">م</th>
+<th>اسم العميل</th>
+<th>مبلغ عليه</th>
+<th>حد اقصي مديونيه</th>
+<th>رقم هاتف</th>
+<th>ملاحظات</th>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</tr>
+
+<tr>
+<td class="series">1</td>
+<td>محمد السيد<span style="font-size: 11px;display: block;">منوف</span></td>
+<td>3000</td>
+<td>2000</td>
+<td>01019539347</td>
+<td>لا يوجد</td>
+
+</tr>
+
+
+<tr>
+<td class="series">2</td>
+<td>حسن احمد<span style="font-size: 11px;display: block;">منوف</span></td>
+<td>5000</td>
+<td>2000</td>
+<td>01062933188</td>
+<td>لا يوجد</td>
+
+</tr>
+
+<tr>
+<td class="series">2</td>
+<td>حسن احمد<span style="font-size: 11px;display: block;">منوف</span></td>
+<td>5000</td>
+<td>2000</td>
+<td>01062933188</td>
+<td>لا يوجد</td>
+
+</tr>
+
+<tr>
+<td class="series">2</td>
+<td>حسن احمد<span style="font-size: 11px;display: block;">منوف</span></td>
+<td>5000</td>
+<td>2000</td>
+<td>01062933188</td>
+<td>لا يوجد</td>
+
+</tr>
+
+<tr>
+<td class="series">2</td>
+<td>حسن احمد<span style="font-size: 11px;display: block;">منوف</span></td>
+<td>5000</td>
+<td>2000</td>
+<td>01062933188</td>
+<td>لا يوجد</td>
+
+</tr>
+
+<tr>
+<td class="series">2</td>
+<td>حسن احمد<span style="font-size: 11px;display: block;">منوف</span></td>
+<td>5000</td>
+<td>2000</td>
+<td>01062933188</td>
+<td>لا يوجد</td>
+
+</tr>
+
+<tr>
+<td class="series">2</td>
+<td>حسن احمد<span style="font-size: 11px;display: block;">منوف</span></td>
+<td>5000</td>
+<td>2000</td>
+<td>01062933188</td>
+<td>لا يوجد</td>
+
+</tr>
+
+<tr>
+<td class="series">2</td>
+<td>حسن احمد<span style="font-size: 11px;display: block;">منوف</span></td>
+<td>5000</td>
+<td>2000</td>
+<td>01062933188</td>
+<td>لا يوجد</td>
+
+</tr>
+
+<tr>
+<td class="series">2</td>
+<td>حسن احمد<span style="font-size: 11px;display: block;">منوف</span></td>
+<td>5000</td>
+<td>2000</td>
+<td>01062933188</td>
+<td>لا يوجد</td>
+
+</tr>
+
+<tr>
+<td class="series">2</td>
+<td>حسن احمد<span style="font-size: 11px;display: block;">منوف</span></td>
+<td>5000</td>
+<td>2000</td>
+<td>01062933188</td>
+<td>لا يوجد</td>
+
+</tr>
+
+<tr>
+<td class="series">2</td>
+<td>حسن احمد<span style="font-size: 11px;display: block;">منوف</span></td>
+<td>5000</td>
+<td>2000</td>
+<td>01062933188</td>
+<td>لا يوجد</td>
+
+</tr>
+
+<tr>
+<td class="series">2</td>
+<td>حسن احمد<span style="font-size: 11px;display: block;">منوف</span></td>
+<td>5000</td>
+<td>2000</td>
+<td>01062933188</td>
+<td>لا يوجد</td>
+
+</tr>
+
+<tr>
+<td class="series">2</td>
+<td>حسن احمد<span style="font-size: 11px;display: block;">منوف</span></td>
+<td>5000</td>
+<td>2000</td>
+<td>01062933188</td>
+<td>لا يوجد</td>
+
+</tr>
+
+<tr>
+<td class="series">2</td>
+<td>حسن احمد<span style="font-size: 11px;display: block;">منوف</span></td>
+<td>5000</td>
+<td>2000</td>
+<td>01062933188</td>
+<td>لا يوجد</td>
+
+</tr>
+
+</table>
+               
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
 
       <script src="js/jquery2.js"></script>
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
-
-<script>
-var xValues = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
-var yValues = [40, 46, 37, 24, 32, 28,35];
-var barColors = ["#20c997", "#17a2b8","#20c997","#17a2b8","#20c997","#17a2b8","#20c997"];
-
-new Chart("myChart", {
-  type: "bar",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    title: {
-      display: true,
-    }
-  }
-});
-</script>
   </body>
 </html>
 
+
+       
+ 
