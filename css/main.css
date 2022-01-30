@@ -41,14 +41,16 @@ body{
         margin-bottom: 0.2rem;
     }
 
+   
     .py-3 {
         padding-top: 0.62rem!important;
         padding-bottom: 0.62rem!important;
+        font-size: 13px;
     }
     
     .py-4 {
-        padding-top: 0.9rem!important;
-        padding-bottom: 0.9rem!important;
+        padding-top: 0.6rem!important;
+        padding-bottom: 0.6rem!important;
     }
     
     
@@ -72,18 +74,21 @@ body{
     .electronic{
             background-color: #415770;
             box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            margin: 0px;
         }
 
     .electronic p{
 
-    padding-top: 1.9rem;
-    padding-bottom: 0.35rem;
+
     padding-right: 30px;
     color: #eee;
-    font-size: 14px;
+    font-size: 14.5px;
     box-sizing: border-box;
     font-family: 'Kufam', sans-serif;
-    font-weight: 400;
+    margin: 0px;
+
     }
 
 
@@ -386,7 +391,7 @@ font-size: 14px;
 }
 
 .mt-16 {
-    margin-top: 4.5rem;
+    margin-top: 4rem;
 }
 
 
