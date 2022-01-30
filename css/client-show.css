@@ -1,0 +1,358 @@
+body{
+
+    direction: rtl;
+    height: 100vh;
+    
+    
+    }
+
+    
+    
+    img{
+    
+    display: inline;
+    }
+    
+    .shadow-md {
+        box-shadow: none;
+    }
+    .relative span{
+    
+    padding-right: 10px;
+    color: #ccc;
+    font-weight: 400;
+    font-size: 13.5px;
+    }
+    
+    li,a{
+    
+    color: #ccc!important;
+    text-decoration: none;
+    }
+    
+    .bg-gray-100{
+    
+        background-color: #fff;
+    
+    }
+
+    .mt-6{
+
+        margin-bottom: 0.2rem;
+    }
+
+    .py-3 {
+        padding-top: 0.62rem!important;
+        padding-bottom: 0.62rem!important;
+        font-size: 13px;
+    }
+    
+    .py-4 {
+        padding-top: 0.9rem!important;
+        padding-bottom: 0.9rem!important;
+    }
+    
+    
+    .repor{
+
+
+        padding-top: 0rem!important;
+        padding-bottom: 0rem!important;
+        }
+        
+        
+    aside{
+    
+    box-sizing: border-box;
+    }
+    
+    .pr-2 {
+        padding-right: .8rem;
+    }
+
+    .electronic{
+            background-color: #415770;
+            box-sizing: border-box;
+        }
+
+    .electronic p{
+
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    padding-right: 30px;
+    color: #eee;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: 'Kufam', sans-serif;
+    }
+
+
+    body{
+
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+        box-sizing: border-box;
+        direction: rtl;
+        font-family: 'Cairo', sans-serif;
+    }
+
+        *{
+        
+        box-sizing: border-box;
+        }
+        
+        .container{
+        
+        width: 95%;
+        margin: auto;
+        }
+     
+        .navbar-light .navbar-brand {
+        
+        color: #eee;
+        width: 20%;
+        text-align: left;
+        font-weight: 300;
+        font-size: 15px;
+        }
+        
+        .navbar-nav .nav-item .nav-link{
+        
+        color: #eee;
+        font-size: 15px;
+        font-weight: 300;
+        }
+        
+        .navbar-nav{
+        
+        width: 80%;
+        }
+        
+        .container-fluid{
+        
+        width: 95%;
+        margin: auto;
+        }
+        
+        .dropdown-menu .dropdown-item{
+        
+        text-align: center;
+        }
+        
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: .9rem;
+            padding-left: .9rem;
+        }
+        
+        /***/
+        
+      
+
+        input{
+
+        border: 1px solid #f6f6f6;
+        }
+        
+
+.head-addclient .add{
+
+padding: 25px 0px;
+text-align: center;
+}
+
+
+
+.head-addclient{
+
+padding: 25px 0px;
+margin: 15px 0px;
+
+}
+
+
+
+.head-addclient .addclient1 input{
+
+
+    width: 95%;
+}
+
+
+
+
+.head-addclient .addclient2 input{
+
+
+width: 95%;
+}
+
+
+
+.head-addclient .row{
+
+justify-content: center;
+align-items: center;
+}
+
+.head-addclient .addclient1 label,.head-addclient .addclient2 label{
+
+padding: 20px 0px 5px 0px;
+font-size: 15px;
+
+}
+
+.head-addclient .addclient1 input,.head-addclient .addclient2 input,.head-addclient .addclient3 input{
+
+padding: 10px 7px;
+border: none;
+outline: none;
+border: 1px solid #aaa;
+font-size: 15px;
+border-radius: 4px;
+color: #777;
+}
+
+
+
+.head-addclient .addclient3{
+
+padding: 30px 0px;
+}
+
+@media(max-width:767px)
+{
+
+      *{
+        
+        box-sizing: border-box;
+        }
+        
+
+
+ .head-addclient .addclient1 input,.head-addclient .addclient2 input,.head-addclient .addclient3 input{
+
+padding: 8px 7px;
+border: none;
+outline: none;
+border: 1px solid #aaa;
+font-size: 15px;
+border-radius: 4px;
+}
+   
+.head-addclient .addclient1 label,.head-aaddclient .addclient2 label{
+
+padding: 10px 0px 5px 0px;
+}
+
+.head-addclient{
+
+padding: 25px 0px;
+margin: 5px 0px;
+
+}
+
+.head-addclient .add{
+
+padding: 25px 0px;
+text-align: center;
+}
+
+.head-addclient .addclient1 input{
+
+
+    width: 100%;
+}
+
+
+
+
+.head-addclient .addclient2 input{
+
+
+width: 100%;
+}
+
+.head-addclient .addclient3 input{
+
+    width: 100%;
+    border: none;
+    color: #fff;
+    font-size: 15.5px;
+}
+
+}
+
+
+@media(max-width:767px){
+
+.mt-16 {
+    margin-top: 4.8rem;
+}
+
+
+.py-3 {
+    padding-top: 0.55rem!important;
+    padding-bottom: 0.55rem!important;
+}
+
+
+.icon2{
+
+display: none;
+}
+
+ol, ul {
+    padding-left: 0rem;
+}
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    transition: .3s;
+}
+::-webkit-scrollbar-thumb {
+    background: #e1e6f1;
+}
+
+.bg-gray-100 {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+
+
+
+i{
+
+cursor: pointer;
+}
+
+.lg\:mr-32 {
+     margin-right: 0rem;
+}
+
+.max-w-xl {
+    max-width: none;
+}
+.mr-6 {
+    margin-right: 0rem;
+}
+
+.aside{
+
+transition: 1s all;
+}
+
+
+.mr-5 {
+    margin-right: 0rem;
+}
+
+.bg-gray-50 {
+    background-color: #fff;
+}
